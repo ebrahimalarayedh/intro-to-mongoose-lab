@@ -98,8 +98,8 @@ async function runCommands(actiontoRun) {
         case "4":
             console.log("  4. Delete a customer")
             await showCustomer()
-            const idtoDelete = prompt('Copy and paste the id of the customer you would like to update here: ')
-            await updateCutomer(idtoDelete)
+            const idtoDelete = prompt('Copy and paste the id of the customer you would like to delete here: ')
+            await deleteCustomer(idtoDelete)
             await runCommands(showList())
             break
 
